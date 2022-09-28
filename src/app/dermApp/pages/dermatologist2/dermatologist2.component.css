@@ -1,0 +1,136 @@
+.Doctor{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.section1{
+  margin: 20px;
+  width: 400px;
+}
+.calendar2{
+
+}
+.calendar2 p{
+  margin-top: 10px;
+  background:#CEBDB7;
+  padding:8px;
+  width: 350px;
+
+  border-radius: 10px;
+}
+
+/*.section2{*/
+/*  margin: 40px;*/
+/*  border:solid 5px #CCCCCC;*/
+/*  width: 950px;*/
+/*  height: 450px;*/
+/*}*/
+
+.info-patients{
+  display: flex;
+  padding: 20px;
+
+}
+.list-patients{
+  padding: 20px;
+  width: 100%;
+}
+
+.list-patients p{
+  margin-top: 10px;
+  background:#FAFAFA;
+  padding:8px;
+  width: 100%;
+  border-radius: 10px;
+}
+.list-patients .button{
+  align-items: center;
+}
+
+
+.info-patient-specific{
+  width: 950px;
+  margin: 10px;
+  background:#FAFAFA;
+  opacity: 0.9;
+  border: solid 2px #F1F1F1;
+  height: 350px;
+  border-radius: 40px;
+
+}
+.info-patient-specific {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+.info-patient-specific h6{
+  font-size: 15px;
+}
+.info-patient-specific .part3{
+  border: solid 3px #F1F1F1;
+  width: 290px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 40px;
+  align-items: center;
+}
+
+.info-patient-specific img{
+  padding: 5px;
+}
+
+.section1-2{
+  border: solid 3px #F1F1F1;
+}
+.section2{
+  width: 70%;
+}
+
+.section2 .to-interact{
+  display: flex;
+  justify-content:space-around ;
+
+}
+
+
+
+
+
+.section3-4{
+  display: flex;
+  justify-content: space-around;
+
+}
+.section3-4 .section3{
+  border: solid 3px #F1F1F1;
+  width: 50%;
+  margin: 10px;
+  padding: 20px;
+}
+.section3-4 .section3 .section3-2{
+  width: 50%;
+  margin:auto;
+  text-align: center;
+}
+.section3-4 .section4{
+  border: solid 3px #F1F1F1;
+  width: 50%;
+  margin: 10px;
+  align-items: center;
+  padding: 20px;
+}
+
+.section3-4 .section4 p{
+  border: solid 3px #F1F1F1;
+  width: 90%;
+  margin-top: 10px;
+  background:#FAFAFA;
+  padding:8px;
+
+  border-radius: 10px;
+}
+

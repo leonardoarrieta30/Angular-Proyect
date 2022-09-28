@@ -1,0 +1,186 @@
+<section class="Doctor">
+
+  <section class="section1">
+    <h1>“Quote of day”</h1>
+
+    <p>Author</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+
+
+
+    <mat-nav-list>
+      <mat-list-item *ngFor="let link of horarios">
+        <h4 matLine>{{link.range}}</h4>
+        <h4>{{link.patient}}</h4>
+        <a matLine href="...">{{ link }}</a>
+<!--        <button mat-icon-button (click)="showInfo(link)">-->
+<!--          <mat-icon>info</mat-icon>-->
+<!--        </button>-->
+      </mat-list-item>
+    </mat-nav-list>
+
+
+
+<!--    <div class="calendar2">-->
+<!--      <p>08:00am - 08:30am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 1</p>-->
+<!--      <p>08:30am - 09:00am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 2</p>-->
+<!--      <p>09:00am - 09:30am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 3</p>-->
+<!--      <p>09:30am - 10:00am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 4</p>-->
+<!--      <p>10:00am - 10:30am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 5</p>-->
+<!--      <p>10:30am - 11:00am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 6</p>-->
+<!--      <p>11:00am - 11:30am &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 7</p>-->
+<!--      <p>11:30am - 12:00pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 8</p>-->
+<!--      <p>02:00pm - 02:30pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 9</p>-->
+<!--      <p>02:30pm - 03:00pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente 10</p>-->
+
+<!--    </div>-->
+
+
+  </section>
+
+  <section class="section1-2">
+
+  </section>
+
+
+  <section class="section2">
+
+   <div class="to-interact">
+     <div class="section2-status">
+       <!--      <h4>Basic mat-select</h4>-->
+       <mat-form-field appearance="fill">
+         <mat-label>Status</mat-label>
+         <mat-select>
+           <!--        <mat-option *ngFor="let food of foods" [value]="food.value">-->
+           <!--          {{food.viewValue}}-->
+           <!--        </mat-option>-->
+         </mat-select>
+       </mat-form-field>
+
+     </div>
+
+     <div class="section2-button">
+       <button mat-raised-button>Appt. date</button>
+       <!--      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>-->
+     </div>
+
+
+     <div class="section2-Diagnosis">
+       <!--      <h4>Basic mat-select</h4>-->
+       <mat-form-field appearance="fill">
+         <mat-label>Diagnosis</mat-label>
+         <mat-select>
+           <!--        <mat-option *ngFor="let food of foods" [value]="food.value">-->
+           <!--          {{food.viewValue}}-->
+           <!--        </mat-option>-->
+         </mat-select>
+       </mat-form-field>
+
+     </div>
+
+
+     <div class="section2-find">
+       <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="pageview"></mat-icon>
+     </div>
+   </div>
+
+
+
+    <div class="info-patients">
+
+      <div class="list-patients">
+
+        <mat-list>
+<!--          <h3 matSubheader>Folders</h3>-->
+<!--          <mat-list-item *ngFor="let patient of pacientes">-->
+<!--            <mat-icon matListIcon>folder</mat-icon>-->
+<!--            <h4 matLine>{{patient.name}}</h4>-->
+<!--            <h4 matLine>{{patient.enfermedad}}</h4>-->
+<!--&lt;!&ndash;            <p matLine class="demo-2"> {{patient.updated}} </p>&ndash;&gt;-->
+<!--          </mat-list-item>-->
+
+          <mat-nav-list>
+            <mat-list-item *ngFor="let patient of pacientes">
+              <h4 matLine>{{patient.name}}</h4>
+              <h4>{{patient.status}}</h4>
+              <h4>{{patient.enfermedad}}</h4>
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="information"></mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="forum"></mat-icon>
+              <a matLine href="...">{{ patient }}</a>
+              <!--        <button mat-icon-button (click)="showInfo(link)">-->
+              <!--          <mat-icon>info</mat-icon>-->
+              <!--        </button>-->
+            </mat-list-item>
+          </mat-nav-list>
+
+
+
+
+<!--          <h3 matSubheader>Notes</h3>-->
+<!--          <mat-list-item *ngFor="let note of notes">-->
+<!--            <mat-icon matListIcon>note</mat-icon>-->
+<!--            <h4 matLine>{{note.name}}</h4>-->
+<!--&lt;!&ndash;            <p matLine class="demo-2"> {{note.updated}} </p>&ndash;&gt;-->
+<!--          </mat-list-item>-->
+        </mat-list>
+
+
+<!--        <p>Paciente 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atopic dermatitis</p>-->
+<!--        <p>Paciente 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Psoriasis</p>-->
+<!--        <p>Paciente 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undetermined</p>-->
+<!--        <p>Paciente 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Melanoma</p>-->
+<!--        <p>Paciente 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acne</p>-->
+<!--        <p>Paciente 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undetermined</p>-->
+<!--        <p>Paciente 7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Psoriasis</p>-->
+        <button class="butt" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+          <mat-icon>plus_one</mat-icon>
+        </button>
+      </div>
+
+<!--      <div class="info-patient-specific">-->
+<!--        <div class="part1">-->
+<!--          <h6>Status: In treatment</h6>-->
+<!--          <h6>Diagnostic: Dermatitis</h6>-->
+<!--          <h6>Treatment: Recommended treatment</h6>-->
+<!--          <div class="part3">-->
+<!--            <h3>&nbsp;&nbsp;&nbsp; Patient Files</h3>-->
+<!--            &lt;!&ndash;        <ng-image-slider [images]="imgCollection" #nav></ng-image-slider>&ndash;&gt;-->
+<!--            <img src="../../../../assets/img/patient-files1.png" alt=""/>-->
+<!--            <img src="../../../../assets/img/patient-files2.png" alt=""/>-->
+<!--            <img src="../../../../assets/img/patient-files3.png" alt=""/>-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+<!--        <div class="part2">-->
+<!--          <h2>Patient Name</h2>-->
+<!--          <h6>Patient Age</h6>-->
+<!--          <h6>Patient Gender</h6>-->
+<!--          <h6>Patient Residence</h6>-->
+<!--          <img src="../../../../assets/img/profile-patient.png" alt=""/>-->
+<!--        </div>-->
+
+
+
+<!--      </div>-->
+
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+</section>
+

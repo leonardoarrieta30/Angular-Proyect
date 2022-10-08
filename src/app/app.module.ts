@@ -30,6 +30,9 @@ import {SharedModule} from "./dermApp/pages/shared/shared.module";
 import {DermatologistsService} from "./dermApp/services/dermatologists.service";
 import { EditProfileDermatologistComponent } from './dermApp/pages/edit-profile-dermatologist/edit-profile-dermatologist.component';
 import { BottomSheetComponent } from './dermApp/pages/bottom-sheet/bottom-sheet.component';
+import { VisitorViewComponent } from './public/pages/visitor-view/visitor-view.component';
+import { InfoPatientSpecificComponent } from './dermApp/pages/info-patient-specific/info-patient-specific.component';
+
 
 
 
@@ -53,7 +56,9 @@ import { BottomSheetComponent } from './dermApp/pages/bottom-sheet/bottom-sheet.
     ChatDermatologistComponent,
     AnalyticsDermatologistComponent,
     EditProfileDermatologistComponent,
-    BottomSheetComponent
+    BottomSheetComponent,
+    VisitorViewComponent,
+    InfoPatientSpecificComponent
   ],
   imports: [
     BrowserModule,

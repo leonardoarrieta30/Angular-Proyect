@@ -4,40 +4,42 @@
 
 
 
-  <div class="login-form">
-    <h1>LOG IN</h1>
+    <div class="login-form">
+      <h1>LOG IN</h1>
 
-    <div class="login-form1">
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="Email">
+      <div class="login-form1">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email">
+          </mat-form-field>
+        </p>
+      </div>
+      <div class="login-form2">
+        <mat-form-field appearance="fill">
+          <mat-label>Are you?</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let user of users" [value]="user.value">
+              {{user.viewValue}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
-      </p>
-    </div>
-    <div class="login-form2">
-      <mat-form-field appearance="fill">
-        <mat-label>Are you?</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let user of users" [value]="user.value">
-            {{user.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
+      </div>
+
+      <div class="login-form3">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password">
+          </mat-form-field>
+        </p>
+      </div>
+
+      <button mat-button [routerLink]="'/dermatologist'" mat-flat-button color="primary">LOG IN</button>
+      <button mat-button [routerLink]="'/sign-in'" mat-raised-button color="primary" >Register</button>
     </div>
 
-    <div class="login-form3">
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Password</mat-label>
-          <input matInput placeholder="Password">
-        </mat-form-field>
-      </p>
-    </div>
 
-    <button mat-button [routerLink]="'/dermatologist'" mat-flat-button color="primary">LOG IN</button>
-    <button mat-button [routerLink]="'/sign in'" mat-raised-button color="primary" >Register</button>
-  </div>
 
 
 

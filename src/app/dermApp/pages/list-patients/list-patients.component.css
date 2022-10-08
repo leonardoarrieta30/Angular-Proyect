@@ -13,3 +13,7 @@ tr.editable-row {
 .spinner{
   margin: 0  auto;
 }
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

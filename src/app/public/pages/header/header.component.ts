@@ -13,16 +13,15 @@ export class HeaderComponent implements OnInit {
   }
   options = [
     { path: '/home', title: 'Home'},
-    { path: '/students', title: 'Students'},
-    { path: '/instructors', title: 'Instructors'},
     { path: '/about', title: 'About'},
     { path: '/login', title: 'Login'},
-    { path: '/sign in', title: 'Sing In'}
+    { path: '/sign-in', title: 'Sing In'},
+    // { path: '/character', title: 'Character'},
 
   ]
-  options2=[
-    { path: '/character', title: 'Character'},
-    { path: '/dermatologist'}
-  ]
+  // options2=[
+  //   { path: '/character', title: 'Character'},
+  //   { path: '/dermatologist'}
+  // ]
 
 }

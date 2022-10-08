@@ -15,12 +15,14 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule} from "@angular/material/toolbar";
+import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [],
@@ -45,7 +47,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatSnackBarModule,
     MatBottomSheetModule,
     MatSidenavModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatGridListModule
   ],
   exports:[
     FormsModule,
@@ -67,7 +70,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatSnackBarModule,
     MatBottomSheetModule,
     MatSidenavModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatGridListModule
   ]
 })
 export class SharedModule { }

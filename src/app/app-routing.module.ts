@@ -17,6 +17,8 @@ import {
 import {
   EditProfileDermatologistComponent
 } from "./dermApp/pages/edit-profile-dermatologist/edit-profile-dermatologist.component";
+import {VisitorViewComponent} from "./public/pages/visitor-view/visitor-view.component";
+import {InfoPatientSpecificComponent} from "./dermApp/pages/info-patient-specific/info-patient-specific.component";
 
 const routes: Routes = [
   // { path: 'home', component: HomeComponent },
@@ -25,11 +27,21 @@ const routes: Routes = [
   // { path: 'students', component: StudentsComponent},
   // { path: 'instructors', component: InstructorsComponent },
   // { path: '**', component: PageNotFoundComponent }
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomePageComponent },
-  { path: 'sign in', component: RegisterFormComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'login', component:LoginFormComponent},
+  { path: '', component: VisitorViewComponent, children:[
+      { path: '', component: HomePageComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'sign-in', component: RegisterFormComponent },
+      { path: 'login', component:LoginFormComponent},
+      { path: 'home', component: HomePageComponent },
+    ]},
+  //
+  // { path: 'character', component:TypeOfUserComponent},
+  // { path: '', redirectTo: 'home', pathMatch: 'full'},
+
+  // { path: 'sign in', component: RegisterFormComponent },
+  // { path: 'about', component: AboutComponent },
+  // { path: 'login', component:LoginFormComponent},
+
   { path: 'character', component:TypeOfUserComponent},
   { path: 'view-dermatologist',loadChildren:()=>import('src/app/dermApp/pages/shared/shared.module').then(x=>x.SharedModule)},
   { path: 'dermatologist', component:ScheduleDoctorComponent},
@@ -41,6 +53,7 @@ const routes: Routes = [
       {path:'patients',component:ListPatientsComponent},
       {path:'profile',component:ProfileDermatologistComponent},
       {path:'edit-profile',component:EditProfileDermatologistComponent},
+      {path: 'infoPatientSpecific', component:InfoPatientSpecificComponent},
     ]}
   // {path:'chats',component:ListPatientsComponent},
   // {path:'analytics',component:ListPatientsComponent},

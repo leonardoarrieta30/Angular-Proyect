@@ -7,6 +7,7 @@ import {MatSort} from "@angular/material/sort";
 import {FormBuilder, FormGroup, NgForm, Validators} from "@angular/forms";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-list-patients',
@@ -18,6 +19,7 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
   // form:FormGroup
   loading=false
   loading2=false
+  a:any=[]
 
   patientData: Patient;
   dataSource: MatTableDataSource<any>;
@@ -27,16 +29,14 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
   @ViewChild('patientForm', {static: false})
   patientForm!: NgForm;
 
-  @ViewChild(MatPaginator, {static: false})
-  paginator!: MatPaginator;
+  @ViewChild(MatPaginator, {static: false}) paginator!: MatPaginator;
 
 
-  @ViewChild(MatSort)
-  sort!: MatSort;
+  @ViewChild(MatSort) sort!: MatSort;
 
   isEditMode = false;
 
-  constructor(private patientsService: PatientsService) {
+  constructor(private patientsService: PatientsService, private router:Router,private _snackBar: MatSnackBar) {
     this.patientData = {} as Patient;
     this.dataSource = new MatTableDataSource<any>();
     // this.form = this.fb.group({
@@ -63,15 +63,19 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
     },1500)
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
 
   ngOnInit(): void {
-    this.dataSource.paginator = this.paginator;
     this.getAllPatients();
   }
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
   getAllPatients() {
@@ -85,7 +89,14 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
     this.patientData = _.cloneDeep(element);
     this.isEditMode = true;
   }
-
+  showInfoPatient(id:number){
+    console.log(id);
+    this.patientsService.getById(id).subscribe((response:any)=> {
+      this.a.data=response;
+      this.router.navigate(['/infoPatientSpecific'],this.a)
+    })
+    console.log(this.a);
+  }
   cancelEdit() {
     this.isEditMode = false;
     this.patientForm.resetForm();
@@ -96,6 +107,11 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
       this.dataSource.data = this.dataSource.data
         .filter((o: Patient) => { return o.id !== id ? o : false; });
     });
+    this._snackBar.open('patient successfully eliminated', '',{
+      duration:6000,
+      horizontalPosition:'center',
+      verticalPosition:'bottom'
+    })
     console.log(this.dataSource.data);
   }
   //GAAAAAAAAA SALIO CSMR
@@ -107,6 +123,11 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
         this.dataSource.data = this.dataSource.data.map((o: any) => { return o});
       },1500)
     });
+    this._snackBar.open('patient added successfully', '',{
+      duration:6000,
+      horizontalPosition:'center',
+      verticalPosition:'bottom'
+    })
   }
 
   updatePatient() {
@@ -120,6 +141,11 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
             return o;
           });
       });
+    this._snackBar.open('patient successfully updated', '',{
+      duration:6000,
+      horizontalPosition:'center',
+      verticalPosition:'bottom'
+    })
   }
 
   onSubmit() {

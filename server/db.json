@@ -42,32 +42,8 @@
     {
       "name": "leona",
       "age": 50,
-      "address": "Ate Vitarte",
+      "address": "Santa anita",
       "id": 8
-    },
-    {
-      "name": "sasd",
-      "age": 13,
-      "address": "dsa",
-      "id": 9
-    },
-    {
-      "name": "asd",
-      "age": 13,
-      "address": "asd",
-      "id": 10
-    },
-    {
-      "name": "zarrullo",
-      "age": 56,
-      "address": "zeta",
-      "id": 11
-    },
-    {
-      "name": "Danna",
-      "age": 2,
-      "address": "Ate Vitarte",
-      "id": 12
     }
   ],
   "dermatologists": [

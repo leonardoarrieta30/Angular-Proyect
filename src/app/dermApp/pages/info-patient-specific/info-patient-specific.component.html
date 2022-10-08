@@ -1,0 +1,70 @@
+<div class="container">
+  <mat-toolbar>
+    <span>info-patient</span>
+    <div class="example-spacer"></div>
+     <button mat-raised-button color="primary" routerLink="/patients">Back</button>
+  </mat-toolbar>
+</div>
+
+<div class="patient" >
+
+
+  <div class="patient-section1">
+<!--    <h1>Patient {{}}</h1>-->
+    <mat-card style="margin-top: 10px">
+      <form >
+          <mat-grid-list cols="4" rowHeight="80px">
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-NAME
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="3" [rowspan]="8" [style.background]="'lightblue'">
+              IMG-ENFERMEDAD-WITH-CARD
+              <h1>Day 1</h1>
+              <img src="" alt="">
+              <h2>Doctor’s notes -DAY 1</h2>
+              <p>- Large symmetrical mole in upper right shoulder, appears to be non-cancerous
+                - Awaiting further tests</p>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-AGE
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-GENDER
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-RESIDENCE
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-STATUS
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-DIAGNOSTIC
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              PATIENT-TREATMENT
+            </mat-grid-tile>
+            <mat-grid-tile  [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+              IMG-USUARIO-FACE
+<!--              <img src="{{element.urlToImage}}" style="width: 50px">-->
+            </mat-grid-tile>
+          </mat-grid-list>
+        <br>
+        <br>
+
+      </form>
+
+    </mat-card>
+  </div>
+
+
+
+  <div class="patient-section2">
+
+  </div>
+
+
+
+
+
+
+</div>

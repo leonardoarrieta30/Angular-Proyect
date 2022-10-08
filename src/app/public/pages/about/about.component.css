@@ -1,0 +1,82 @@
+.about .background-image {
+  position: absolute; /*posicion fija*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: #2196F3;
+  z-index: -1;
+}
+.background-image{
+  /*background-repeat: repeat-x;*/
+}
+
+.about .background-image:after { /**/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #414A4F;
+  opacity: 0.75;
+}
+h1, h3{
+  color: #FFFFFF;
+}
+h1{
+  padding: 10px;
+  text-align: center;
+}
+
+.the-team{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+
+}
+.jasmin{
+  width: 30%;
+  border: solid 13px #2196F3;
+  text-align: center;
+}
+.jasmin img{
+  width: 100px;
+}
+
+.diego{
+  width: 30%;
+  border: solid 13px #2196F3;
+  text-align: center;
+}
+.diego img{
+  width: 100px;
+}
+
+.leonardo{
+  width: 30%;
+  border: solid 13px #2196F3;
+  text-align: center;
+}
+.leonardo img{
+  width: 100px;
+}
+
+.emilia{
+  width: 30%;
+  border: solid 13px #2196F3;
+  text-align: center;
+}
+.emilia img{
+  width: 100px;
+}
+
+.thomas{
+  width: 30%;
+  border: solid 13px #2196F3;
+  text-align: center;
+}
+.thomas img{
+  width: 100px;
+}

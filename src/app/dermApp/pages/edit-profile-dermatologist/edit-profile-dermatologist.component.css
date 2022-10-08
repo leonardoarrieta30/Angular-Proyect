@@ -1,0 +1,28 @@
+.editProfile{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+.edit-profile-section1{
+
+}
+.edit-profile-section2{
+
+
+}
+mat-checkbox{
+  margin:0 10px 10px 20px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}

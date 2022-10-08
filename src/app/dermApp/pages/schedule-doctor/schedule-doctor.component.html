@@ -1,0 +1,26 @@
+<app-header-dermatologist></app-header-dermatologist>
+<div class="Doctor">
+
+    <h1>“Medicines can cure disease, but only doctor can cure patients”</h1>
+
+    <p>Carl Jung</p>
+
+
+    <mat-nav-list>
+      <mat-list-item *ngFor="let link of horarios">
+        <h4 matLine>{{link.range}}</h4>
+        <h4>{{link.patient}}</h4>
+<!--        <a matLine href="">{{ link }}</a>-->
+        <!--        <button mat-icon-button (click)="showInfo(link)">-->
+        <!--          <mat-icon>info</mat-icon>-->
+        <!--        </button>-->
+      </mat-list-item>
+    </mat-nav-list>
+
+
+
+
+</div>
+
+
+

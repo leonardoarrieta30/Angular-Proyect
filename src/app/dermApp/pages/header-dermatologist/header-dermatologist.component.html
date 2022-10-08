@@ -1,0 +1,28 @@
+
+
+<div class="hero" >
+
+<!--  <mat-toolbar color="warn">-->
+<!--    <h1>Dermatology</h1>-->
+<!--    <h2>DermAPP</h2>-->
+<!--    <div class="mat-spacer"></div>-->
+<!--    <a mat-button *ngFor="let option of options"-->
+<!--       [routerLink]="option.path">{{ option.title }}</a>-->
+<!--    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="account_circle" ></mat-icon>-->
+<!--  </mat-toolbar>-->
+<mat-toolbar color="warn">
+  <span>Dermatology</span>
+
+  <span class="mat-spacer"></span>
+  <button mat-button routerLink="/chats">Chats</button>
+  <button mat-button routerLink="/analytics">Analytics</button>
+  <button mat-button routerLink="/calendar">Calendar</button>
+  <button mat-button routerLink="/patients">Patients</button>
+  <button mat-button routerLink="/profile">Profile</button>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/home">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+</div>

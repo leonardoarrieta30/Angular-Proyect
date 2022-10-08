@@ -1,0 +1,75 @@
+<div class="background-image"  style="background-image: url(assets/hero.jpg)" role="img"
+     aria-label="An astronaut space walk, representing our capacity to help you achieve the highest business goals and standards"></div>
+<div class="contenedor">
+
+  <div class="contenedor1">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-actions>
+        <button mat-button>Edit Image</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="contenedor2">
+
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="lastname" type="text" placeholder="LastName">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="Age">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="Location">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="username" type="text" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="Speciality">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="WorkPlace">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="password" type="text" placeholder="Password">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="Rewrite you password">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="firstname" type="text" placeholder="Linkedin">
+    </mat-form-field>
+
+
+
+    <button mat-button [routerLink]="'/character'" mat-raised-button color="warn">Next</button>
+    <!--  <p>La suma de los dos valores es:{{resultado}}</p>-->
+
+  </div>
+
+
+</div>

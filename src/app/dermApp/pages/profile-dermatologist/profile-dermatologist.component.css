@@ -1,0 +1,33 @@
+.profile{
+  display: flex;
+  /*en la linea horizontal*/
+  justify-content: space-around;
+  /*en la linea vertical*/
+  align-items: center;
+  /*margin-top: 150px;*/
+}
+
+.name-btnEditP{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+h1{
+  font-weight: bold;
+}
+
+.profile-section1{
+  margin-bottom: 30px;
+}
+.matIcon{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.profile-section2{
+
+}
+section{
+  margin-top:200px ;
+}

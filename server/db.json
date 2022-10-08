@@ -1,0 +1,105 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Julio Martinez",
+      "age": 25,
+      "address": "noWhere",
+      "infirmity": "Atopic dermatitis"
+    },
+    {
+      "id": 2,
+      "name": "Elver galondrino",
+      "age": 30,
+      "address": "Unknown",
+      "infirmity": "Psoriasis"
+    },
+    {
+      "id": 3,
+      "name": "Tony Stark",
+      "age": 45,
+      "address": "One Place",
+      "infirmity": "Undetermined"
+    },
+    {
+      "name": "Leonardo Arrieta",
+      "age": 21,
+      "address": "Santa Anita",
+      "id": 4
+    },
+    {
+      "name": "Romeo Santos",
+      "age": 30,
+      "address": "Surco",
+      "id": 5
+    },
+    {
+      "name": "Nicolle",
+      "age": 20,
+      "address": "Santa Anita",
+      "id": 6
+    },
+    {
+      "name": "leona",
+      "age": 50,
+      "address": "Ate Vitarte",
+      "id": 8
+    },
+    {
+      "name": "sasd",
+      "age": 13,
+      "address": "dsa",
+      "id": 9
+    },
+    {
+      "name": "asd",
+      "age": 13,
+      "address": "asd",
+      "id": 10
+    },
+    {
+      "name": "zarrullo",
+      "age": 56,
+      "address": "zeta",
+      "id": 11
+    },
+    {
+      "name": "Danna",
+      "age": 2,
+      "address": "Ate Vitarte",
+      "id": 12
+    }
+  ],
+  "dermatologists": [
+    {
+      "id": 1,
+      "name": "Mauricio Rivera",
+      "age": 45,
+      "address": "noWhere"
+    },
+    {
+      "id": 2,
+      "name": "Lele Ponce",
+      "age": 40,
+      "address": "Unknown"
+    },
+    {
+      "id": 3,
+      "name": "Steve Rogers",
+      "age": 35,
+      "address": "One Place"
+    },
+    {
+      "id": 4,
+      "name": "Pedro Gallese",
+      "age": 45,
+      "address": "One Place soon Lima"
+    },
+    {
+      "id": 6,
+      "name": "Marco Olccese",
+      "age": 55,
+      "address": "One Place soon Surco"
+    }
+  ]
+}

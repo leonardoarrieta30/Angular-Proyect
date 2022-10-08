@@ -1,0 +1,13 @@
+
+<div class="hero" >
+
+  <mat-toolbar color="warn">
+    <h1>Dermatology</h1>
+    <h2>DermAPP</h2>
+    <div class="mat-spacer"></div>
+    <a mat-button *ngFor="let option of options"
+       [routerLink]="option.path">{{ option.title }}</a>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="account_circle"></mat-icon>
+  </mat-toolbar>
+
+</div>

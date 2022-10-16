@@ -1,0 +1,56 @@
+
+
+.hero .background-image {
+  position: absolute; /*posicion fija*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  z-index: -1;
+}
+
+.hero .background-image:after { /**/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 22%, rgba(0, 0, 0, 0.53) 43%, rgba(0, 0, 0, 0.53) 62%, rgba(0, 0, 0, 0.42) 88%);
+}
+.hero h1 {
+  align-items: center;
+  width: 50%;
+  font: bold 50px 'Open Sans', sans-serif;
+
+}
+
+.hero p{
+  font: normal 15px 'Open Sans', sans-serif;
+
+}
+
+.hero .frase{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+
+  /*font: normal 28px 'Open Sans', sans-serif;*/
+  /*padding: 125px 100px;*/
+  margin: 200px 80px;
+}
+.frase button{
+  margin-top: 10px;
+  font-size: large;
+  background-color: #B49587;
+}
+
+.frase{
+  color: white;
+}
+

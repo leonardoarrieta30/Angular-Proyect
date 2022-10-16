@@ -1,0 +1,59 @@
+<div class="editProfile">
+  <div class="edit-profile-section1">
+    <h1>Mauricio Rios, MD</h1>
+    <img src="/src/assets/dermatologist.png">
+    <br>
+    <p>You have received a file called "cat-picture.jpeg".</p>
+    <div class="btn">
+      <button mat-raised-button (click)="openBottomSheet()">Open file</button>
+    </div>
+
+  </div>
+  <div class="edit-profile-section2">
+    <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Ex. Leonardo">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Age</mat-label>
+        <input matInput placeholder="Ex. 36">
+    </mat-form-field>
+      <mat-checkbox class="example-margin">Female</mat-checkbox>
+      <mat-checkbox class="example-margin">Male</mat-checkbox>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Location</mat-label>
+        <input matInput placeholder="Ex. Lima" >
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Speciality</mat-label>
+        <input matInput placeholder="Ex. Dermatologist">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>WorkPlace</mat-label>
+        <input matInput placeholder="Ex. EsSalud">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>LinkedIn</mat-label>
+        <input matInput placeholder="Ex. LeonardoArrieta30">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Facebook</mat-label>
+        <input matInput placeholder="Ex. LeonardoArrieta">
+      </mat-form-field>
+
+    </form>
+
+    <div class="btn">
+      <button mat-raised-button color="accent" routerLink="/profile">Save Changes</button>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>

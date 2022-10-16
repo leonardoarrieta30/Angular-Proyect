@@ -1,0 +1,35 @@
+ <mat-grid-list cols="2" rowHeight="100%">
+    <mat-grid-tile >
+      <img src="assets/log_in_background.png" alt="">
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="login-form">
+        <h1>LOG IN</h1>
+
+        <div class="login-form1">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email">
+            </mat-form-field>
+          </p>
+        </div>
+
+        <div class="login-form2">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password">
+            </mat-form-field>
+          </p>
+        </div>
+<div class="buttons">
+  <button mat-button [routerLink]="'/home-patient'" mat-flat-button color="primary">LOG IN</button>
+  <button mat-button [routerLink]="'/sign-in'" mat-raised-button color="primary" >Register</button>
+
+</div>
+       </div>
+    </mat-grid-tile>
+
+  </mat-grid-list>

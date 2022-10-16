@@ -1,0 +1,86 @@
+{
+  "patients": [
+    {
+      "name": "Nicolle",
+      "age": 36,
+      "address": "Santa Anita",
+      "id": 6
+    },
+    {
+      "name": "leona",
+      "age": 50,
+      "address": "Santa anita",
+      "id": 8
+    },
+    {
+      "name": "Diana",
+      "age": 20,
+      "address": "Ate Vitarte",
+      "id": 9
+    }
+  ],
+  "dermatologists": [
+    {
+      "id": 1,
+      "name": "Mauricio Rivera",
+      "age": 45,
+      "address": "noWhere"
+    },
+    {
+      "id": 2,
+      "name": "Lele Ponce",
+      "age": 40,
+      "address": "Unknown"
+    },
+    {
+      "id": 3,
+      "name": "Steve Rogers",
+      "age": 35,
+      "address": "One Place"
+    },
+    {
+      "id": 4,
+      "name": "Pedro Gallese",
+      "age": 45,
+      "address": "One Place soon Lima"
+    },
+    {
+      "id": 6,
+      "name": "Marco Olccese",
+      "age": 55,
+      "address": "One Place soon Surco"
+    }
+  ],
+  "fileusers": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "filename": "",
+      "id": 3
+    },
+    {
+      "filename": "",
+      "id": 4
+    },
+    {
+      "filename": null,
+      "id": 5
+    },
+    {
+      "filename": null,
+      "id": 6
+    },
+    {
+      "filename": null,
+      "id": 7
+    },
+    {
+      "filename": "",
+      "id": 8
+    }
+  ]
+}

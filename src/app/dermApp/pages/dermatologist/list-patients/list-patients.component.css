@@ -1,0 +1,19 @@
+.table-wrapper {
+  width: 1024px;
+  margin: 50px auto;
+}
+
+table {
+  width: 100%;
+}
+
+tr.editable-row {
+  background-color: lightskyblue;
+}
+.spinner{
+  margin: 0  auto;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

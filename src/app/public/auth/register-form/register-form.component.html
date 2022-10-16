@@ -1,0 +1,72 @@
+
+<div class="contenedor" >
+
+  <form class="contenedor1" [formGroup]="FilesImgDataForm" #form='ngForm'>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Profile</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image width="50px"  [src]="preview" alt="">
+      <label >Filename : {{dataimage1}}</label>
+      <mat-card-actions>
+        <input  mat-button (change)="capture_file($event)" type="file">
+        <button mat-button (click)="Uploadfile()" > Subir Archivo</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+
+  <div class="contenedor2" >
+<h1> Rellene sus datos: </h1>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput  type="text" placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Speciality</mat-label>
+      <mat-select >
+        <mat-option  value="one"  >Dermatology</mat-option>
+        <mat-option value="two"> Patient</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>LastName</mat-label>
+      <input matInput  type="text" placeholder="LastName">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Age</mat-label>
+      <input matInput  type="text" placeholder="Age">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Location</mat-label>
+      <input matInput  type="text" placeholder="Location">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="text" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Linkedin</mat-label>
+      <input matInput  type="text" placeholder="Linkedin">
+    </mat-form-field>
+
+    <button [routerLink]="'/character'" mat-raised-button color="warn">Next</button>
+    <!--  <p>La suma de los dos valores es:{{resultado}}</p>-->
+
+  </div>
+
+
+</div>
+

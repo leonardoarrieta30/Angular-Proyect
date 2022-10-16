@@ -1,0 +1,14 @@
+<form (ngSubmit)="fakeLoading()" (submit)="onSubmit()" #patientForm='ngForm'>
+  <mat-form-field>
+    <input matInput placeholder="Name" name="name"
+           required [(ngModel)]="patientData.name">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="number" matInput placeholder="Age" name="age"
+           required [(ngModel)]="patientData.age">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Address" name="address"
+           required [(ngModel)]="patientData.address">
+  </mat-form-field>
+</form>
